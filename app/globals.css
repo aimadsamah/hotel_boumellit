@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-charcoal text-off-white font-sans;
+  }
+
+  ::selection {
+    @apply bg-gold/30 text-off-white;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-charcoal;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gold/30 rounded-full hover:bg-gold/50 transition-colors;
+  }
+}
+
+@layer components {
+  .gold-border {
+    @apply border border-gold/20;
+  }
+
+  .gold-border-b {
+    @apply border-b border-gold/20;
+  }
+
+  .gold-border-t {
+    @apply border-t border-gold/20;
+  }
+
+  .glass {
+    @apply bg-charcoal/60 backdrop-blur-xl;
+  }
+
+  .glass-light {
+    @apply bg-off-white/5 backdrop-blur-lg;
+  }
+
+  .section-padding {
+    @apply px-5 sm:px-8 md:px-12 lg:px-16 xl:px-24;
+  }
+
+  .section-spacing {
+    @apply py-20 md:py-28 lg:py-36;
+  }
+
+  .gold-text {
+    @apply text-gold;
+  }
+
+  .gold-gradient-text {
+    @apply bg-gold-gradient bg-clip-text text-transparent;
+  }
+
+  .luxury-card {
+    @apply bg-charcoal-light/50 gold-border rounded-2xl backdrop-blur-sm
+           hover:border-gold/40 transition-all duration-500
+           hover:shadow-[0_0_30px_-5px_rgba(201,168,76,0.15)];
+  }
+}
+
+@layer utilities {
+  .touch-safe {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
