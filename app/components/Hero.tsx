@@ -10,9 +10,13 @@ export default function Hero() {
   return (
     <section
       id="nav-home"
-      className="relative min-h-[100svh] flex items-center justify-center overflow-hidden"
+      className="relative min-h-[100svh] flex items-center justify-center overflow-hidden bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/hero2.jpg')",
+        backgroundAttachment: "fixed",
+      }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/30 via-charcoal/50 to-charcoal z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/75 to-charcoal z-10" />
 
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(201,168,76,0.08)_0%,_transparent_70%)]" />
 
@@ -49,6 +53,10 @@ export default function Hero() {
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
+          onClick={() => {
+            const element = document.getElementById("nav-about");
+            element?.scrollIntoView({ behavior: "smooth" });
+          }}
           className="group relative inline-flex items-center gap-2 gold-border rounded-full px-8 py-4 text-sm tracking-widest uppercase text-gold hover:bg-gold hover:text-charcoal transition-all duration-500 overflow-hidden"
         >
           <span className="relative z-10">{t("hero.cta")}</span>

@@ -82,7 +82,10 @@ export default function Header() {
             src="/logo.png"
             alt="Hôtel Boumellit"
             className="h-10 md:h-14 w-auto object-contain group-hover:opacity-80 transition-opacity duration-400"
-            style={{ background: "transparent !important", mixBlendMode: "multiply" }}
+            style={{
+              background: "transparent !important",
+              mixBlendMode: "multiply",
+            }}
           />
         </button>
 
@@ -135,13 +138,14 @@ export default function Header() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="fixed inset-0 top-16 bg-charcoal/95 backdrop-blur-2xl md:hidden"
+            style={{ height: "calc(100svh - 4rem)" }}
           >
             <motion.div
               variants={containerVariants}
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="flex flex-col items-center justify-center h-full gap-12 px-8"
+              className="flex flex-col items-center justify-center min-h-full gap-8 px-6 py-8 sm:gap-10 sm:py-12"
               dir={dir}
             >
               {sections.map((s) => (

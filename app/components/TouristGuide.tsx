@@ -11,7 +11,7 @@ const sites = [
   "phare",
   "corniche",
   "taza",
-  "cascade",
+  "beni-belaid",
 ] as const;
 
 function generateMapsUrl(name: string): string {
@@ -80,13 +80,7 @@ export default function TouristGuide() {
 
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {sites.map((site, i) => (
-            <SiteCard
-              key={site}
-              site={site}
-              index={i}
-              t={t}
-              dir={dir}
-            />
+            <SiteCard key={site} site={site} index={i} t={t} dir={dir} />
           ))}
         </div>
 
@@ -97,13 +91,11 @@ export default function TouristGuide() {
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {sites.map((site, i) => (
-              <div key={site} className="snap-start shrink-0 w-[85vw] max-w-sm">
-                <SiteCard
-                  site={site}
-                  index={i}
-                  t={t}
-                  dir={dir}
-                />
+              <div
+                key={site}
+                className="snap-start shrink-0 w-[calc(100vw-2rem)] sm:w-[90vw] md:max-w-none"
+              >
+                <SiteCard site={site} index={i} t={t} dir={dir} />
               </div>
             ))}
           </div>
@@ -152,46 +144,47 @@ function SiteCard({
         ease: [0.25, 0.1, 0, 1],
       }}
       whileHover={{ y: -4 }}
-      className="luxury-card p-6 md:p-8 flex flex-col"
+      className="group relative overflow-hidden rounded-lg md:rounded-xl h-96 sm:h-80 md:h-96 flex flex-col justify-between"
       dir={dir}
+      style={{
+        backgroundImage: `url('/${site}.jpg')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0">
-          <MapPin className="w-4 h-4 text-gold" />
+      {/* Overlay gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/60 to-charcoal/80 group-hover:from-charcoal/50 group-hover:via-charcoal/70 group-hover:to-charcoal/90 transition-all duration-500 z-10" />
+
+      {/* Content */}
+      <div className="relative z-20 p-6 md:p-8 flex flex-col justify-between h-full">
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 backdrop-blur-sm">
+              <MapPin className="w-4 h-4 text-gold" />
+            </div>
+            <span className="text-xs tracking-widest uppercase text-gold/70 font-semibold">
+              {`0${index + 1}`}
+            </span>
+          </div>
+
+          <h3 className="font-serif text-2xl md:text-3xl mb-3 text-gold leading-snug">
+            {t(`guide.${site}.name`)}
+          </h3>
+
+          <p className="text-off-white/80 text-sm md:text-base font-light leading-relaxed hidden md:block">
+            {t(`guide.${site}.desc`)}
+          </p>
         </div>
-        <span className="text-xs tracking-widest uppercase text-gold/50">
-          {`0${index + 1}`}
-        </span>
-      </div>
 
-      <h3 className="font-serif text-xl md:text-2xl mb-3 gold-text leading-snug">
-        {t(`guide.${site}.name`)}
-      </h3>
-
-      <p className="text-off-white/60 text-sm font-light leading-relaxed mb-6 flex-1">
-        {t(`guide.${site}.desc`)}
-      </p>
-
-      <a
-        href={generateMapsUrl(t(`guide.${site}.name`))}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group inline-flex items-center gap-2 text-xs tracking-widest uppercase text-gold/80 hover:text-gold transition-colors duration-400 touch-safe"
-      >
-        {t("guide.viewmap")}
-        <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-400" />
-      </a>
-
-      <div className="mt-5 gold-border-t border-gold/10 pt-4">
-        <div className="w-full h-[1px] bg-gold/5 overflow-hidden">
-          <motion.div
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.5, delay: index * 0.15, ease: [0.25, 0.1, 0, 1] }}
-            className="h-full bg-gold/30 origin-left"
-          />
-        </div>
+        <a
+          href={generateMapsUrl(t(`guide.${site}.name`))}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/link inline-flex items-center gap-2 text-xs tracking-widest uppercase text-gold/90 hover:text-gold transition-colors duration-400 touch-safe font-semibold"
+        >
+          {t("guide.viewmap")}
+          <ArrowUpRight className="w-3 h-3 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform duration-400" />
+        </a>
       </div>
     </motion.div>
   );

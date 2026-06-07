@@ -42,9 +42,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "guide.taza.name": "Parc National de Taza",
     "guide.taza.desc":
       "Une réserve de biosphère classée par l'UNESCO, abritant une forêt dense, des cascades et une biodiversité exceptionnelle aux portes de Jijel.",
-    "guide.cascade.name": "La Cascade de Ziama",
-    "guide.cascade.desc":
-      "Une chute d'eau spectaculaire nichée au cœur de la forêt. Un véritable havre de paix où la nature règne en maître.",
+    "guide.beni-belaid.name": "Les Plages de Béni Belaïd",
+    "guide.beni-belaid.desc":
+      "Un ensemble de plages vierges et préservées, caractérisées par des criques rocheuses et une eau cristalline. Parfait pour les amateurs de baignade et de plongée.",
     "guide.viewmap": "Voir sur Google Maps",
     "footer.rights": "© 2026 Hôtel Boumellit. Tous droits réservés.",
     "footer.tagline": "L'excellence méditerranéenne",
@@ -90,9 +90,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "guide.taza.name": "Taza National Park",
     "guide.taza.desc":
       "A UNESCO-classified biosphere reserve, sheltering dense forest, waterfalls and exceptional biodiversity at the gates of Jijel.",
-    "guide.cascade.name": "Ziama Waterfall",
-    "guide.cascade.desc":
-      "A spectacular waterfall nestled in the heart of the forest. A true haven of peace where nature reigns supreme.",
+    "guide.beni-belaid.name": "Béni Belaïd Beaches",
+    "guide.beni-belaid.desc":
+      "A set of pristine and preserved beaches, characterized by rocky coves and crystal-clear water. Perfect for swimming and diving enthusiasts.",
     "guide.viewmap": "View on Google Maps",
     "footer.rights": "© 2026 Hôtel Boumellit. All rights reserved.",
     "footer.tagline": "Mediterranean excellence",
@@ -137,9 +137,9 @@ export const translations: Record<Lang, Record<string, string>> = {
     "guide.taza.name": "الحديقة الوطنية تازة",
     "guide.taza.desc":
       "محمية المحيط الحيوي المصنفة من قبل اليونسكو، تضم غابة كثيفة وشلالات وتنوعًا بيولوجيًا استثنائيًا على أبواب جيجل.",
-    "guide.cascade.name": "شلال زيامة",
-    "guide.cascade.desc":
-      "شلال مذهل يقع في قلب الغابة. ملاذ حقيقي للسلام حيث تسود الطبيعة.",
+    "guide.beni-belaid.name": "شواطئ بني بلعيد",
+    "guide.beni-belaid.desc":
+      "مجموعة من الشواطئ البكر والمحفوظة، تتميز بالعرانيس الصخرية والمياه الصافية. مثالية لعشاق السباحة والغوص.",
     "guide.viewmap": "عرض على خرائط غوغل",
     "footer.rights": "© 2026 فندق بومليط. جميع الحقوق محفوظة.",
     "footer.tagline": "التميز المتوسطي",
