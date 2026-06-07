@@ -60,7 +60,7 @@ export default function MapSection() {
               Jijel, 18000 Jijel, Algérie
             </span>
             <a
-              href="https://maps.google.com/?q=Jijel+Algeria"
+              href="https://www.google.com/maps?q=Hôtel+Boumellit+Jijel"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs tracking-widest uppercase text-gold/80 hover:text-gold transition-colors duration-400"

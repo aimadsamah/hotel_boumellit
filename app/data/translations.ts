@@ -24,7 +24,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "social.tiktok": "TikTok",
     "social.followers": "Abonnez-vous",
     "map.title": "Nous Trouver",
-    "map.subtitle": "Au cœur de la ville jijelienne",
+    "map.subtitle": "Au cœur de la ville de Jijel",
     "guide.title": "Guide Touristique",
     "guide.subtitle": "Explorez les merveilles de la région de Jijel",
     "guide.grottes.name": "Les Grottes Merveilleuses",
