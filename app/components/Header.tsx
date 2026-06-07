@@ -81,7 +81,7 @@ export default function Header() {
           <img
             src="/logo.png"
             alt="Hôtel Boumellit"
-            className="h-10 md:h-14 w-auto object-contain group-hover:opacity-80 transition-opacity duration-400"
+            className="h-14 md:h-20 w-auto object-contain group-hover:opacity-80 transition-opacity duration-400"
             style={{
               background: "transparent !important",
               mixBlendMode: "multiply",
