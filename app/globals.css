@@ -82,4 +82,14 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .bg-fixed-responsive {
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 768px) {
+    .bg-fixed-responsive {
+      background-attachment: fixed;
+    }
+  }
 }

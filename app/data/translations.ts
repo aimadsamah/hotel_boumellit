@@ -24,7 +24,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "social.tiktok": "TikTok",
     "social.followers": "Abonnez-vous",
     "map.title": "Nous Trouver",
-    "map.subtitle": "Au cœur de la corniche jijelienne",
+    "map.subtitle": "Au cœur de la ville jijelienne",
     "guide.title": "Guide Touristique",
     "guide.subtitle": "Explorez les merveilles de la région de Jijel",
     "guide.grottes.name": "Les Grottes Merveilleuses",
@@ -109,7 +109,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "about.title": "فندقنا",
     "about.description":
       "يقع فندقنا على الساحل المتوسطي الرائع، ويوفر مكانًا بأناقة نادرة. كل تفصيل صُمم ليجعل إقامتك لحظة لا تُنسى، تمزج بين سحر الجزائر الأصيل والراحة العصرية.",
-    "about.address": "كورنيش ",
+    "about.address": "جيجل، 18000 جيجل، الجزائر",
     "about.phone": "+213 (0) 563 05 47 30",
     "about.email": "reception@hotelboumellit.com",
     "social.title": "تابعونا",
@@ -122,7 +122,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     "map.subtitle": "في قلب كورنيش جيجل",
     "guide.title": "دليل سياحي",
     "guide.subtitle": "استكشف عجائب منطقة جيجل",
-    "guide.grottes.name": "الكهوف الرائعة",
+    "guide.grottes.name": "الكهوف العجيبة",
     "guide.grottes.desc":
       "تحفة فنية منحوتة بفعل التآكل البحري. كهوف بلمسات فيروزية تقدم مشهدًا خلابًا من الصواعد والضوء الطبيعي.",
     "guide.plage.name": "الشاطئ الأحمر",

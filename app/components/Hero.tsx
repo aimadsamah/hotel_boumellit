@@ -10,10 +10,9 @@ export default function Hero() {
   return (
     <section
       id="nav-home"
-      className="relative min-h-[100svh] flex items-center justify-center overflow-hidden bg-cover bg-center"
+      className="relative min-h-[100svh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed-responsive"
       style={{
         backgroundImage: "url('/hero2.jpg')",
-        backgroundAttachment: "fixed",
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/75 to-charcoal z-10" />

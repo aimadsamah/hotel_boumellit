@@ -7,10 +7,7 @@ export default function MapSection() {
   const { t, dir } = useLanguage();
 
   return (
-    <section
-      id="nav-map"
-      className="relative section-spacing section-padding"
-    >
+    <section id="nav-map" className="relative section-spacing section-padding">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +57,7 @@ export default function MapSection() {
               className="text-xs tracking-widest uppercase text-off-white/50"
               dir={dir}
             >
-              Corniche de Jijel, 18000 Jijel, Algérie
+              Jijel, 18000 Jijel, Algérie
             </span>
             <a
               href="https://maps.google.com/?q=Jijel+Algeria"
