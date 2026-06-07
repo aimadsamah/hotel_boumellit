@@ -100,7 +100,7 @@ export default function AboutSection() {
                 {t("about.title")}
               </h3>
               <p className="text-off-white/60 font-light leading-relaxed" dir={dir}>
-                {t("about.description")}
+                {t("about.highlights")}
               </p>
               <div className="mt-8 gold-border-t pt-6 flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center">

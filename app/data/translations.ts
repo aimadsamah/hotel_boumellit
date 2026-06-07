@@ -14,6 +14,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     "about.title": "Notre Hôtel",
     "about.description":
       "Niché sur la magnifique côte méditerranéenne, notre établissement vous offre un cadre d'une élégance rare. Chaque détail a été pensé pour faire de votre séjour un moment inoubliable, alliant le charme authentique de l'Algérie à un confort contemporain.",
+    "about.highlights":
+      "Notre hôtel dispose d'installations de classe mondiale : restauration raffinée, spa relaxant, plage privée et service 24h/24. Profitez de vues spectaculaires sur la méditerranée et laissez-vous dorloter par notre équipe dévouée.",
     "about.address": "Jijel, 18000 Jijel, Algérie",
     "about.phone": "+213 (0) 563 05 47 30",
     "about.email": "reception@hotelboumellit.com",
@@ -62,6 +64,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     "about.title": "Our Hotel",
     "about.description":
       "Nestled on the magnificent Mediterranean coast, our establishment offers a setting of rare elegance. Every detail has been designed to make your stay an unforgettable moment, blending Algeria's authentic charm with contemporary comfort.",
+    "about.highlights":
+      "Our hotel features world-class facilities: refined dining, relaxing spa, private beach and 24/7 service. Enjoy spectacular views of the Mediterranean and let our dedicated team pamper you.",
     "about.address": "Jijel, 18000 Jijel, Algeria",
     "about.phone": "+213 (0) 563 05 47 30",
     "about.email": "reception@hotelboumellit.com",
@@ -109,6 +113,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     "about.title": "فندقنا",
     "about.description":
       "يقع فندقنا على الساحل المتوسطي الرائع، ويوفر مكانًا بأناقة نادرة. كل تفصيل صُمم ليجعل إقامتك لحظة لا تُنسى، تمزج بين سحر الجزائر الأصيل والراحة العصرية.",
+    "about.highlights":
+      "يتمتع فندقنا بمرافق على مستوى عالمي: الطعام الراقي، منتجع صحي فاخر، شاطئ خاص وخدمة 24/7. استمتع بمناظر رائعة للبحر المتوسط واترك فريقنا المخصص يدللك.",
     "about.address": "جيجل، 18000 جيجل، الجزائر",
     "about.phone": "+213 (0) 563 05 47 30",
     "about.email": "reception@hotelboumellit.com",
